@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <title>עוגות - Cake Shop</title>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="/static/images/logo2.jpg" class="logo" alt="Sweet Moment Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">בית</a></li>
+                <li><a href="/cakes">העוגות שלנו</a></li>
+                <li><a href="/workshops">הסדנאות שלנו</a></li>
+                <li><a href="/contact">צור קשר</a></li>
+                <li><a href="/A_little_about_us"> הסיפור שלנו</a></li>
+            </ul>
+            <form class="search-form">
+                <div class="search-container">
+                    <input type="text" id="search-input" placeholder="חפש עוגה..." required>
+                    <button type="button" class="search-icon" onclick="toggleSearch()">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </form>
+      
+            
+          
+        </nav>
+   
+        
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>ברוכים הבאים לחנות העוגות שלנו</h1>
+                    <p>בחרו את העוגה המושלמת לכל אירוע</p>
+                </div>
+            </div>
+        </section>
+        <section class="cakes-section">
+            <h2>העוגות שלנו</h2>
+            <div class="cake-grid">
+                <a href="/cake-details/1" class="cake-card">
+                    <img src="{{ url_for('static', filename='images/IMG-20241217-WA0077.jpg') }}" alt="עוגות מלבנים גדולות">
+                    <div class="cake-card-title"> מקרונים מארז/מגדל</div>
+                    <div class="cake-card-details">
+                        <p>פרטים נוספים על המקרונים שלנו</p>
+                    </div>
+                </a>
+                
+                <a href="/cake-details/1" class="cake-card">
+                    <img src="{{ url_for('static', filename='images/Kindergarten cakes for boys.jpg') }}" alt="עוגות מלבנים גדולות">
+                    <div class="cake-card-title">מארז בנטו קאפקייס</div>
+                    <div class="cake-card-details">
+                        <p>פרטים נוספים על מארזי הבנטו שלנו</p>
+                    </div>
+                </a>
+                
+                <a href="/cake-details/1" class="cake-card">
+                    <img src="{{ url_for('static', filename='images/Kindergarten cakes for boys.jpg') }}" alt="עוגות מלבנים גדולות">
+                    <div class="cake-card-title">עוגות בנטו</div>
+                    <div class="cake-card-details">
+                        <p>פרטים נוספים על עוגות הבנטו שלנו</p>
+                    </div>
+                </a>
+                
+                <a href="/cake-details/1" class="cake-card">
+                    <img src="{{ url_for('static', filename='images/Kindergarten cakes for boys.jpg') }}" alt="עוגות מלבנים גדולות">
+                    <div class="cake-card-title"> עוגה מלבנית בר מצווה</div>
+                    <div class="cake-card-details">
+                        <p>פרטים נוספים על עוגת בר בר מצווה מלבנית שלנו</p>
+                    </div>
+                </a>
+                
+                <a href="/cake-details/1" class="cake-card">
+                    <img src="{{ url_for('static', filename='images/Kindergarten cakes for boys.jpg') }}" alt="עוגות מלבנים גדולות">
+                    <div class="cake-card-title">מגשי פירות</div>
+                    <div class="cake-card-details">
+                        <p>פרטים נוספים על מגשי הפירות שלנו</p>
+                    </div>
+                </a>
+                
+                <a href="/cake-details/1" class="cake-card">
+                    <img src="{{ url_for('static', filename='images/Kindergarten cakes for boys.jpg') }}" alt="עוגות מלבנים גדולות">
+                    <div class="cake-card-title">עוגות מלבניות (מבוגרים)</div>
+                    <div class="cake-card-details">
+                        <p>פרטים נוספים על עוגות המלבניות שלנו</p>
+                    </div>
+                </a>
+                
+
+
+                
+                <a href="/cake-details/1" class="cake-card">
+                    <img src="{{ url_for('static', filename='images/Kindergarten cakes for boys.jpg') }}" alt="עוגות מלבנים גדולות">
+                    <div class="cake-card-title">עוגות גן גדולות (בנים)</div>
+                    <div class="cake-card-details">
+                        <p>פרטים נוספים על עוגות הגן הגדולות שלנו</p>
+                    </div>
+                </a>
+                
+                
+                
+                
+                
+                
+
+                <a href="/cake-details/1" class="cake-card">
+                    <img src="{{ url_for('static', filename='images/Kindergarten cakes for boys.jpg') }}" alt="עוגות מלבנים גדולות">
+                    <div class="cake-card-title">עוגות מלבניות מסיבת סידור/חומש</div>
+                    <div class="cake-card-details">
+                        <p>פרטים נוספים על עוגות מסיבת סידור/חומש שלנו  </p>
+                    </div>
+                </a>
+                
+
+                <a href="/cake-details/1" class="cake-card">
+                    <img src="{{ url_for('static', filename='images/A case of cupcakes.jpg') }}" alt="עוגות מלבנים גדולות">
+                    <div class="cake-card-title">קאפקייס ממותג/מעוצב</div>
+                    <div class="cake-card-details">
+                        <p>פרטים נוספים על הקאפקייס שלנו</p>
+                    </div>
+                </a>
+                
+                <a href="/cake-details/1" class="cake-card">
+                    <img src="{{ url_for('static', filename='images/Kindergarten cakes for girls.jpg') }}" alt="עוגות מלבנים גדולות">
+                    <div class="cake-card-title">עוגות גן גדולות בינוני</div>
+                    <div class="cake-card-details">
+                        <p>פרטים נוספים על עוגות גן בינוני שלנו</p>
+                    </div>
+                </a>
+                
+                <a href="/cake-details/1" class="cake-card">
+                    <img src="{{ url_for('static', filename='images/Kindergarten cakes for boys.jpg') }}" alt="עוגות מלבנים גדולות">
+                    <div class="cake-card-title">קייטרינג חלבי בוטיק</div>
+                    <div class="cake-card-details">
+                        <p>פרטים נוספים על הקייטרינג חלבי שלנו</p>
+                    </div>
+                </a>
+                
+                <a href="/cake-details/1" class="cake-card">
+                    <img src="{{ url_for('static', filename='images/Kindergarten cakes for boys.jpg') }}" alt="עוגות מלבנים גדולות">
+                    <div class="cake-card-title">עוגות מוס גדולות</div>
+                    <div class="cake-card-details">
+                        <p>פרטים נוספים על עוגות מוסים הגדולות שלנו</p>
+                    </div>
+                </a>
+                
+                <a href="/cake-details/1" class="cake-card">
+                    <img src="{{ url_for('static', filename='images/Kindergarten cakes for boys.jpg') }}" alt="עוגות מלבנים גדולות">
+                    <div class="cake-card-title">עיצובי פירות</div>
+                    <div class="cake-card-details">
+                        <p>פרטים נוספים על העצובי פירות שלנו</p>
+                    </div>
+                </a>
+                
+                <a href="/cake-details/1" class="cake-card">
+                    <img src="{{ url_for('static', filename='images/Sweet boxes.jpg') }}" alt="עוגות מלבנים גדולות">
+                    <div class="cake-card-title">מארזים מתוקים</div>
+                    <div class="cake-card-details">
+                        <p>פרטים נוספים על  המארזים המתוקים שלנו </p>
+                    </div>
+                </a>
+                
+                <a href="/cake-details/1" class="cake-card">
+                    <img src="{{ url_for('static', filename='images/Kindergarten cakes for boys.jpg') }}" alt="עוגות מלבנים גדולות">
+                    <div class="cake-card-title">סושי פירות/שוקולד</div>
+                    <div class="cake-card-details">
+                        <p>פרטים נוספים על הסושי -שלנו</p>
+                    </div>
+                </a>
+                
+                <a href="/cake-details/1" class="cake-card">
+                    <img src="{{ url_for('static', filename='images/Kindergarten cakes for boys.jpg') }}" alt="עוגות מלבנים גדולות">
+                    <div class="cake-card-title">פרלינים</div>
+                    <div class="cake-card-details">
+                        <p>פרטים נוספים על הפרלינים שלנו</p>
+                    </div>
+                </a>
+                
+            </div>
+        </section>
+    </main>
+    <div class="social-icons">
+        <a href="https://facebook.com" class="facebook" target="_blank">
+            <i class="fab fa-facebook-f"></i> <!-- אייקון פייסבוק -->
+        </a>
+        <a href="https://twitter.com" class="twitter" target="_blank">
+            <i class="fab fa-twitter"></i> <!-- אייקון טוויטר -->
+        </a>
+        <a href="https://instagram.com" class="instagram" target="_blank">
+            <i class="fab fa-instagram"></i> <!-- אייקון אינסטגרם -->
+        </a>
+    
+        </a>
+        <a href="https://wa.me/972546818777?text=שלום,%20אני%20מעוניין%20לצפות%20בסטטוס!" class="whatsapp" target="_blank">
+            <i class="fab fa-whatsapp"></i> <!-- אייקון וואטסאפ -->
+        </a>
+        
+    </div>
+    <footer>
+        <p>&copy; 2025 Sweet Moment | פיתוח: משה אלקייס | טל: 058-669-9030</p>
+    </footer>
+    
+<script src="/static/search bar.js"></script>
+</body>
+</html>
